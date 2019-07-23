@@ -25,3 +25,8 @@ HELP.md
 /.nb-gradle/
 /build/
 .idea/compiler.xml
+waiter-service/.mvn/
+waiter-service/.gitignore
+
+customer-service/.mvn/
+customer-service/.gitignore
