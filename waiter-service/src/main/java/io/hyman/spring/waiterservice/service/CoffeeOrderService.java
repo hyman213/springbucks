@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Optional;
 
 /**
  * @Description:
@@ -73,4 +74,16 @@ public class CoffeeOrderService {
         return true;
     }
 
+    /**
+     * 删除order-测试@ManyToMany
+     *
+     * @param id
+     * @return
+     */
+    public CoffeeOrder delCoffeeOrderById(Long id) {
+//        Optional<CoffeeOrder> byId = coffeeOrderRepository.findById(id);
+        CoffeeOrder order = coffeeOrderRepository.getOne(id);
+//        coffeeOrderRepository.deleteById(id);
+        return order;
+    }
 }

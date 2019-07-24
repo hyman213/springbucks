@@ -33,6 +33,13 @@ public class CoffeeOrderController {
         return order;
     }
 
+    @GetMapping("del/{id}")
+    public CoffeeOrder delOrder(@PathVariable("id") Long id) {
+        CoffeeOrder order = orderService.delCoffeeOrderById(id);
+        log.info("Del Order: {}", order);// 加日志后，Client接收才不为null
+        return order;
+    }
+
     @PostMapping(path = "/", consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
