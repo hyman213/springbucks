@@ -30,3 +30,6 @@ waiter-service/.gitignore
 
 customer-service/.mvn/
 customer-service/.gitignore
+
+waiter-service-mybatis/.mvn/
+waiter-service-mybatis/.gitignore
