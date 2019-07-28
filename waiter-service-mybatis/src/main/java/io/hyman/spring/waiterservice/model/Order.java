@@ -3,7 +3,6 @@ package io.hyman.spring.waiterservice.model;
 import lombok.*;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 /**
  * @Description:
@@ -17,14 +16,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class Coffee extends BaseEntity implements Serializable {
+public class Order extends BaseEntity implements Serializable {
 
-    private String name;
+    private String customer;
 
-    private BigDecimal price;
-
-
-
-
-
+    private OrderState state;
 }

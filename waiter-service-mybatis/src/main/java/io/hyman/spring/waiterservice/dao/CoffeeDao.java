@@ -18,6 +18,6 @@ public interface CoffeeDao {
     @Insert("INSERT INTO t_coffee(name, price, create_time, update_time) VALUES (#{name}, #{price}, now(), now())")
     void create(Coffee coffee);
 
-    @Update("UPDATE t_coffee SET price = 25 WHERE id = #{id}")
+    @Update("UPDATE t_coffee SET price = 50 WHERE id = #{id}")
     boolean updateById(int id);
 }

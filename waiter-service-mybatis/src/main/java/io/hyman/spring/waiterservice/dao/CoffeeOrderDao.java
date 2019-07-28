@@ -13,7 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface CoffeeOrderDao {
 
-    @Insert("INSERT INTO t_order_coffee(coffee_order_id, items_id) VALUES (#{coffee_order_id}, #{items_id})")
-    boolean createCoffeeOrder(CoffeeOrder coffeeOrder);
+    @Insert("INSERT INTO t_order_coffee(coffee_order_id, items_id) VALUES (#{orderid}, #{itemid})")
+    void createCoffeeOrder(CoffeeOrder coffeeOrder);
 
 }

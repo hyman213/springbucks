@@ -1,9 +1,11 @@
 package io.hyman.spring.waiterservice.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * @Description:
@@ -12,13 +14,10 @@ import java.util.List;
  * @version： 1.0.0
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CoffeeOrder extends BaseEntity implements Serializable {
-    private String customer;
-    private List<Coffee> items;
-    private OrderState state;
+public class CoffeeOrder implements Serializable {
+    private long orderid;
+    private long itemid;
 }
