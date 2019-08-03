@@ -33,3 +33,9 @@ customer-service/.gitignore
 
 waiter-service-mybatis/.mvn/
 waiter-service-mybatis/.gitignore
+
+euraka-server/.mvn/
+euraka-server/.gitignore
+
+euraka-waiter-service/.mvn/
+euraka-waiter-service/.gitignore
